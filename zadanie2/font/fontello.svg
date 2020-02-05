@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="asl" unicode="&#xe800;" d="M1 700q-4 37 15 53t45 5 35-38l53-184q-15-29-14-64 6-30 36-204 7-52 32-82t65-29q47 0 74 37 34-39 83-37t74 41q27-37 71-41t73 27q12 16 20 32t11 37 5 33 1 40l0 38q26-10 61 24 49 45 109 78t98 8q33-24 31-59t-35-55q-61-25-104-82t-67-112-58-117-78-93q-21-18-66-18l-350 0q-84 6-105 118z m181-234q-6 45 21 65t56 8 37-48l21-209q4-41-17-63t-46-15-37 45z m155 70q2 41 32 56t62-1 36-49l8-248q0-59-28-76t-57 5-30 61z m175 4q4 43 37 55t62-7 30-52l-6-254q-5-47-34-66t-54 1-29 67z" horiz-adv-x="979" />
+
+<glyph glyph-name="award" unicode="&#xe801;" d="M256 357q-42 91-42 207h-143v-53q0-44 53-91t132-63z m601 154v53h-143q0-116-41-207 79 16 131 63t53 91z m72 71v-71q0-40-24-80t-62-73-97-54-120-25q-23-30-53-53-21-19-29-40t-8-50q0-30 17-51t54-21q42 0 75-25t32-64v-36q0-8-5-13t-13-5h-464q-8 0-13 5t-5 13v36q0 39 33 64t74 25q38 0 55 21t17 51q0 28-8 50t-29 40q-30 23-53 53-64 3-121 25t-96 54-63 73-23 80v71q0 23 16 38t38 16h160v53q0 37 27 63t63 27h321q37 0 63-27t26-63v-53h161q22 0 38-16t16-38z" horiz-adv-x="928.6" />
+
+<glyph glyph-name="facebook" unicode="&#xf052;" d="M0 350h97v-469h193v469h130l17 161h-146v81q0 18 2 28t8 20 19 13 35 4h81v161h-129q-112 0-161-53t-49-157v-97h-97v-161z" horiz-adv-x="437.5" />
+
+<glyph glyph-name="youtube-play" unicode="&#xf16a;" d="M397 221l270 139-270 141v-280z m103 481q94 0 181-3t128-5l41-2q0 0 9-1t13-2 13-2 16-5 16-7 17-11 16-15q4-3 9-10t16-33 15-56q4-36 7-76t3-64v-98q1-81-10-162-4-30-14-55t-18-35l-8-9q-7-8-16-15t-17-10-16-7-16-5-13-2-13-2-9-1q-140-11-350-11-115 2-201 4t-111 4l-28 3-20 2q-20 3-30 5t-29 12-31 23q-4 3-9 10t-16 33-15 56q-4 36-7 76t-3 64v98q-1 81 10 162 4 31 14 55t18 35l8 9q8 9 16 15t17 11 16 7 16 5 13 2 13 2 9 1q140 10 350 10z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

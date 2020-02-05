@@ -1,0 +1,214 @@
+body
+{
+	/*This pattern is downloaded from www.subtlepatterns.com*/
+	background-image: url("img/tlo.png")
+}
+
+.naglowek
+{
+	width: 1000px;
+	height: 100px;
+	background-color: #616161;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+#logo
+{
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	padding: 10px;
+}
+
+.container
+{
+	width: 1000px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+#lewa
+{
+	width: 200px;
+	height: 730px;
+	margin-top: 20px;
+	display:block;
+	float: left;
+}
+
+#gora
+{
+	width: 200px;
+	height: 375px;
+	background-color: #607D8B;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	display:block;
+}
+
+#dol
+{
+	width: 200px;
+	height: 375px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #00ACC1;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	display:block;
+	float: left;
+}
+
+#prawo
+{
+	width: 780px;
+	height: 510px;
+	background-color: #C0D9D9;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 40px;
+	float: left;
+	display:block;
+}
+
+#cytat
+{
+	width: 480px;
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 40px;
+	background-color: #00CC33;
+	padding-top: 50px;
+	text-align: center;
+	color: black;
+	float: left;
+}
+
+#cytat2
+{
+	width: 480px;
+	height: 130px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 40px;
+	background-color: #00CC33;
+	padding-top: 70px;
+	text-align: center;
+	color: black;
+	float: left;
+}
+
+
+#yt
+{
+	width: 130px;
+	height: 200px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #FF0000;
+	color: white;
+	text-align: center;
+	float: left;
+}
+
+#fb
+{
+	width: 130px;
+	height: 200px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #4267B2;
+	color: white;
+	text-align: center;
+	float: left;
+}
+
+#stopka
+{
+	width: 1000px;
+	background-color: #616161;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+	display:block;
+}
+
+a.tilelink
+{
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 200px;
+	height: 375px;
+}
+
+a.tilelink2
+{
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 130px;
+	height: 200px;
+}
+
+a.tilelink3
+{
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 480px;
+	height: 160px;
+}
+
+a.tilelink4
+{
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 1000px;
+}
+a.tilelink5
+{
+	color: black;
+	text-decoration: none;
+}
+
+#prawo2
+{
+	width: 780px;
+	height: 530px;
+	background-color: #C0D9D9;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+	display:block;
+}
+
+#prawo3
+{
+	width: 780px;
+	height: 530px;
+	background-color: #C0D9D9;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+	display:block;
+}
