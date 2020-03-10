@@ -1,0 +1,83 @@
+body{
+    background-color: darkslategray;
+    margin: 0px;
+}
+#container{
+    width: auto;
+    height: auto;
+}
+#gora{
+    width: 99%;
+    height: 18vh;
+    margin: 0.5%;
+    background-color: rgb(63, 155, 44);
+    display: table;  
+    color: black;
+}
+.gora1{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 10vh;
+}
+#srodek{
+    width: 70%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+#dol{
+    width: 99%;
+    height: 7vh;
+    margin: 0.5%;
+    background-color: rgb(63, 155, 44);
+    color: black;
+    font-family: 'Biryani';
+    text-align: center;
+}
+.maly{
+    width: 25%;
+    height: 35%;
+    margin-left: 6.5%;
+    margin-top: 5%;
+    border-radius: 30px/30px;
+    background-color: grey;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    float: left;
+}
+.maly:hover{
+	background-color: #666666;
+}
+
+a{color: black;}
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:active {text-decoration: none}
+a:hover {text-decoration: none}
+
+.tekst{
+	width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Biryani';
+	float: left;
+}
+#tytul{
+	font-size: 5vh;
+}
+.tytul_maly{
+	font-size: 4vh;
+	padding-top: 20%;
+}
+.wykonawca{
+	padding-left: 50%;
+}
+#drugie{
+	padding-left: 25%;
+}
+#zdjecie{
+	padding-top: 15%;
+}
