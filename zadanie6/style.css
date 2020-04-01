@@ -1,0 +1,188 @@
+html, body{
+    background-color: #EC8B5E;
+    margin: 0;
+    font-size: 5vh;
+}
+#logo{
+    width: 100vw;
+    height: 100vh;
+}
+#logo_text{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35vh;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    border-top: #141A46 1vh dotted;
+    border-bottom: #141A46 1vh dotted;
+    font-family: 'Kreon', bold;
+}
+#learn{
+    width: 13vw;
+    height: 7.5vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: #141A46 0.5vh dashed;
+    font-family: 'Hepta Slab', serif;
+    padding-top: 2.5vh;
+    margin-top: 15vh;
+}
+#learn:hover{
+    color: #141A46;
+    border: #141A46 0.5vh dashed;
+}
+.header{
+    width: 80vw;
+    height: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    color: white;
+    font-family: 'Kreon', bold;
+}
+.text{
+    width: 80vw;
+    height: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    font-size: 0.7rem;
+    padding-bottom: 5vh;
+    color: #141A46;
+    font-family: 'Hepta Slab', serif;
+}
+#footer{
+    width: 99.6vw;
+    height: 19vh;
+    background-color: #141A46;
+    margin-top: 5vh;
+    color: #EC8B5E;
+    text-align: center;
+    padding-top: 5vh;
+    font-family: 'Hepta Slab', serif;
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: #141A46;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4vw;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #d3d3d3;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #949494;
+    border-radius: 50px;  
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(29, 28, 28);
+    transition: 0.3s;
+}
+
+
+/*Media Quaries - start*/
+@media(min-width: 320px){
+    #logo_text{
+    font-size: 1.6rem;
+    }
+    #learn{
+        width: 30vw;
+        height: 15vh;
+    }
+    .header{
+        height: 20vh;
+        border-bottom: #141A46 0.5vw dotted;
+    }
+}
+@media(min-width: 375px){
+    #logo_text{
+        font-size: 1.6rem;
+        }
+        #learn{
+            width: 35vw;
+            height: 15vh;
+        }
+}
+@media(min-width: 576px){
+    #logo_text{
+        font-size: 2rem;
+        }
+        #learn{
+            width: 25vw;
+            height: 15vh;
+        }
+}
+@media(min-width: 768px){
+    #logo_text{
+        font-size: 2rem;
+        }
+        #learn{
+            width: 25vw;
+            height: 15vh;
+        }
+}
+@media(min-width: 992px){
+    #logo_text{
+        font-size: 2rem;
+        }
+        #learn{
+            width: 25vw;
+            height: 15vh;
+        }
+}
+@media(min-width: 1024px){
+    #logo_text{
+        font-size: 2rem;
+        }
+        #learn{
+            width: 25vw;
+            height: 15vh;
+        }
+}
+@media(min-width: 1200px){
+    #logo_text{
+        font-size: 2rem;
+        }
+        #learn{
+            width: 25vw;
+            height: 15vh;
+        }
+}
+@media(orientation: landscape){
+    #logo_text{
+        margin-top: 20vh;
+        font-size: 4rem;
+    }
+    #learn{
+        width: 30vw;
+        height: 7.5vh;
+    }
+    .header{
+        width: 40vw;
+        margin-left: 5vw;
+        text-align: center;
+        font-size: 2rem;
+        height: 35vh;
+        border-bottom: none;
+        float: left;
+    }
+    .text{
+        width: 37.5vw;
+        margin-right: 5vw;
+        padding-left: 3.5vw;
+        border-left: #141A46 0.5vw dotted;
+        border-top: none;
+        float: right;
+    }
+}
+/*Media Quaries - koniec*/
