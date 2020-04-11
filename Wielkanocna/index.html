@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Wesołych Świąt Wielkanocnych</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+    <script type="text/javascript">
+        function click1(){
+            document.getElementById("greatings1").style.zIndex=4;
+            document.getElementById("greatings2").style.zIndex=5;
+            document.getElementById("greatings3").style.zIndex=1;
+            document.getElementById("greatings4").style.zIndex=3;
+            document.getElementById("greatings5").style.zIndex=2;
+        }
+        function click2(){
+            document.getElementById("greatings1").style.zIndex=3;
+            document.getElementById("greatings2").style.zIndex=4;
+            document.getElementById("greatings3").style.zIndex=5;
+            document.getElementById("greatings4").style.zIndex=2;
+            document.getElementById("greatings5").style.zIndex=1;
+        }
+        function click3(){
+            document.getElementById("greatings1").style.zIndex=2;
+            document.getElementById("greatings2").style.zIndex=3;
+            document.getElementById("greatings3").style.zIndex=4;
+            document.getElementById("greatings4").style.zIndex=5;
+            document.getElementById("greatings5").style.zIndex=1;
+        }
+        function click4(){
+            document.getElementById("greatings1").style.zIndex=1;
+            document.getElementById("greatings2").style.zIndex=2;
+            document.getElementById("greatings3").style.zIndex=3;
+            document.getElementById("greatings4").style.zIndex=4;
+            document.getElementById("greatings5").style.zIndex=5;
+        }
+        function click5(){
+            document.getElementById("greatings1").style.zIndex=5;
+            document.getElementById("greatings2").style.zIndex=4;
+            document.getElementById("greatings3").style.zIndex=3;
+            document.getElementById("greatings4").style.zIndex=2;
+            document.getElementById("greatings5").style.zIndex=1;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Wesołych Świąt Wielkanocnych</div>
+    <div id="catkin"><img src="IMG/catkin.png" alt="catkin" id="catkin_image"></div>
+    <div id="eggs"><img src="IMG/eggs.png" alt="easter_eggs "width="100%" height="auto"></div>
+    <div id="greatings">
+        <div id="greatings1" onclick="click1()">Z okazji Świąt Wielkanocy chciałbym życzyć wszystkim jak najmilszego spędzenia tego czasu z najbliższymi. Niech ten czas odpoczynku i zatrzymania się w pędzącym świecie okaże się najlepszą chwilą na uświadomienie sobie tego co jest najważniejsze w naszym życiu. Zdrowia, szczęścia, pomyślności życzy,<p>Michał Kaczyński</p></div>
+        <div id="greatings2" onclick="click2()">Najlepsze życzenia dla wszystkich uczniów oraz całego grona pedagogicznego naszej szkoły a w szczególności pani Ewy Prajsnar. Spokojnych, bezpiecznych, zdrowych i rodzinnych świat życzy <p>Damian Brudkowski</p></div>
+        <div id="greatings3" onclick="click3()">Wszystkiego najlepszego z okazji świąt Wielkanocnych, błogosławieństwa dla Ciebie i całej rodziny. Niech te święta miną rodzinnie, radośnie, i pod znakiem baranka Bożego.<p>Bartek Jaroszek</p></div>
+        <div id="greatings4" onclick="click4()">Wielkanocnych gości, więcej radości, niż złości, słońca krągłego jak pączek, życzy Ci zajączek.<br><br>Rodzinnej atmosfery, spokoju
+            oraz zdrowia życzę
+            z okazji Wielkanocy!<p>Wiktor Kaczyński</p></div>
+        <div id="greatings5" onclick="click5()">Wesołych, spokojnych i rodzinnych świąt wielkanocnych dla wszystkich uczniów, grona pedagogicznego i pracowników naszej szkoły życzy<p>Marcel Bączyński</p></div>
+    </div>
+    <div id="easter"><img src="IMG/easter.png" alt="happy_easter"width="100%" height="auto"></div>
+</body>
+
+</html>

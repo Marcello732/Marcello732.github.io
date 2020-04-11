@@ -1,0 +1,729 @@
+html,
+body {
+    background-color: #ffa07a;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 5vh;
+}
+
+#title {
+    width: 45vw;
+    height: 13.5vh;
+    background-color: #bdfcc9;
+    margin-top: 10vh;
+    padding-top: 6.5vh;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom-right-radius: 5vh;
+    border-top-right-radius: 5vh;
+    font-family: 'Arimo';
+    float: left;
+}
+
+#catkin {
+    width: 35vw;
+    height: 30vh;
+    padding-left: 20vw;
+    float: left;
+}
+
+#catkin_image {
+    width: 40%;
+    height: auto;
+    transform: translate(10vw, -20vh) rotate(-100deg);
+}
+
+#greatings {
+    width: 50vw;
+    height: 70vh;
+    position: relative;
+    font-family: 'Raleway';
+    float: left;
+}
+
+#greatings1 {
+    width: 25vw;
+    height: 40vh;
+    background-color: #F7F396;
+    margin-top: 15vh;
+    margin-left: 12vw;
+    transform: rotate(6deg);
+    position: absolute;
+    z-index: 1;
+    font-size: 1rem;
+    text-align: center;
+    font-size: 0.5em;
+    padding-top: 5vh;
+}
+
+#greatings2 {
+    width: 25vw;
+    height: 35vh;
+    background-color: #BDE8EF;
+    transform: rotate(-12deg);
+    margin-top: 15vh;
+    margin-left: 12vw;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-size: 0.65rem;
+    padding-top: 5vh;
+}
+
+#greatings3 {
+    width: 25vw;
+    height: 40vh;
+    background-color: #c1fda0;
+    transform: rotate(12deg);
+    margin-top: 15vh;
+    margin-left: 12vw;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 5vh;
+}
+
+#greatings4 {
+    width: 25vw;
+    height: 40vh;
+    background-color: #b573dc;
+    transform: rotate(-6deg);
+    margin-top: 15vh;
+    margin-left: 12vw;
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    font-size: 0.65rem;
+    padding-top: 5vh;
+}
+
+#greatings5 {
+    width: 25vw;
+    height: 37vh;
+    background-color:  #ffffe0;
+    transform: rotate(18deg);
+    margin-top: 15vh;
+    margin-left: 12vw;
+    position: absolute;
+    z-index: 5;
+    font-size: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 8vh;
+}
+#greatings5:hover{
+    cursor: grab;
+}
+#greatings4:hover{
+    cursor: grab;
+}
+#greatings3:hover{
+    cursor: grab;
+}
+#greatings2:hover{
+    cursor: grab;
+}
+#greatings1:hover{
+    cursor: grab;
+}
+#eggs{
+    width: 23vw;
+    height: 55vh;
+    padding-top: 15vh;
+    padding-left: 2vw;
+    float: left;
+}
+#easter{
+    width: 23vw;
+    height: 55vh;
+    padding-top: 15vh;
+    padding-left: 2vw;
+    float: left;
+}
+p{
+    font-style: oblique;
+    font-size: 0.9rem;
+}
+
+/*Media Quaries -start*/
+@media(min-width: 320px){
+    #title{
+        width: 90vw;
+        font-size: 1.3rem;
+        padding-top: 3.5vh;
+        height: 16.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        font-size: 0.5rem;
+    }
+    #greatings2{
+        width: 75vw;
+        font-size: 0.55rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 38vh;
+        padding-top: 7vh;
+        font-size: 0.65rem;
+    }
+    #greatings4{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #greatings5{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 375px){
+    #title{
+        width: 90vw;
+        font-size: 1.1rem;
+        padding-top: 3.5vh;
+        height: 16.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        height: 50vh;
+        font-size: 0.5rem;
+    }
+    #greatings2{
+        width: 75vw;
+        height: 45vh;
+        font-size: 0.55rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 48vh;
+        padding-top: 7vh;
+        font-size: 0.6rem;
+    }
+    #greatings4{
+        width: 75vw;
+        height: 50vh;
+        font-size: 0.6rem;
+    }
+    #greatings5{
+        width: 75vw;
+        height: 45vh;
+        font-size: 0.55rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 400px){
+    #title{
+        width: 90vw;
+        font-size: 1.2rem;
+        padding-top: 3.5vh;
+        height: 16.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        font-size: 0.55rem;
+    }
+    #greatings2{
+        width: 75vw;
+        font-size: 0.55rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 48vh;
+        padding-top: 7vh;
+        font-size: 0.65rem;
+    }
+    #greatings4{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #greatings5{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 576px){
+    
+}
+@media(min-width: 768px){
+    #title{
+        width: 90vw;
+        font-size: 1.3rem;
+        padding-top: 3.5vh;
+        height: 16.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+        height: 60vh;
+        padding-top: 10vh;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #greatings2{
+        width: 75vw;
+        font-size: 0.7rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 48vh;
+        padding-top: 7vh;
+        font-size: 0.8rem;
+    }
+    #greatings4{
+        width: 75vw;
+        font-size: 0.75rem;
+    }
+    #greatings5{
+        width: 75vw;
+        font-size: 0.75rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 992px){
+    
+}
+@media(min-width: 1024px){
+        #title{
+        width: 90vw;
+        font-size: 1.3rem;
+        padding-top: 3.5vh;
+        height: 16.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+        height: 60vh;
+        padding-top: 10vh;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #greatings2{
+        width: 75vw;
+        font-size: 0.7rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 48vh;
+        padding-top: 7vh;
+        font-size: 0.8rem;
+    }
+    #greatings4{
+        width: 75vw;
+        font-size: 0.75rem;
+    }
+    #greatings5{
+        width: 75vw;
+        font-size: 0.75rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 1200px){
+/*początek landscapa*/ 
+}
+@media(min-width: 320px) and (orientation: landscape){
+    #title{
+        width: 90vw;
+        font-size: 1.3rem;
+        padding-top: 3.5vh;
+        height: 16.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        font-size: 0.55rem;
+    }
+    #greatings2{
+        width: 75vw;
+        font-size: 0.55rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 38vh;
+        padding-top: 7vh;
+        font-size: 0.65rem;
+    }
+    #greatings4{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #greatings5{
+        width: 75vw;
+        font-size: 0.6rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 400px) and (orientation: landscape){
+    #title{
+        width: 90vw;
+        font-size: 2.2em;
+        padding-top: 5.5vh;
+        height: 23.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+        height: 170vh;
+        padding-top: 10vh;
+    }
+    #greatings{
+        width: 100vw;
+        margin-bottom: 10vh;
+    }
+    #greatings1{
+        width: 75vw;
+        font-size: 1rem;
+    }
+    #greatings2{
+        width: 75vw;
+        font-size: 1rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 48vh;
+        padding-top: 7vh;
+        font-size: 1.2rem;
+    }
+    #greatings4{
+        width: 75vw;
+        font-size: 1rem;
+    }
+    #greatings5{
+        width: 75vw;
+        font-size: 1rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+@media(min-width: 576px) and (orientation: landscape){
+    
+}
+@media(min-width: 768px) and (orientation: landscape){
+    #title{
+        width: 90vw;
+        font-size: 1.2rem;
+        padding-top: 3.5vh;
+        height: 16.5vh;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+        height: 60vh;
+        padding-top: 10vh;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        font-size: 0.7rem;
+    }
+    #greatings2{
+        width: 75vw;
+        font-size: 0.7rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 48vh;
+        padding-top: 7vh;
+        font-size: 0.8rem;
+    }
+    #greatings4{
+        width: 75vw;
+        font-size: 0.75rem;
+    }
+    #greatings5{
+        width: 75vw;
+        font-size: 0.75rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 992px) and (orientation: landscape){
+    
+}
+@media(min-width: 1024px) and (orientation: landscape){
+
+}
+@media(min-width: 1200px) and (orientation: landscape){
+    #title {
+        width: 45vw;
+        height: 13.5vh;
+        background-color: #bdfcc9;
+        margin-top: 10vh;
+        padding-top: 6.5vh;
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
+        border-bottom-right-radius: 5vh;
+        border-top-right-radius: 5vh;
+        float: left;
+    }
+    
+    #catkin {
+        width: 35vw;
+        height: 30vh;
+        padding-left: 20vw;
+        float: left;
+    }
+    
+    #catkin_image {
+        width: 40%;
+        height: auto;
+        transform: translate(10vw, -20vh) rotate(-100deg);
+    }
+    
+    #greatings {
+        width: 50vw;
+        height: 70vh;
+        position: relative;
+        font-family: 'Raleway';
+        float: left;
+    }
+    
+    #greatings1 {
+        width: 25vw;
+        height: 40vh;
+        background-color: #F7F396;
+        margin-top: 15vh;
+        margin-left: 12vw;
+        transform: rotate(6deg);
+        position: absolute;
+        z-index: 1;
+        font-size: 1rem;
+        text-align: center;
+        font-size: 0.5rem;
+        padding-top: 5vh;
+    }
+    
+    #greatings2 {
+        width: 25vw;
+        height: 35vh;
+        background-color: #BDE8EF;
+        transform: rotate(-12deg);
+        margin-top: 15vh;
+        margin-left: 12vw;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        font-size: 0.65rem;
+        padding-top: 5vh;
+    }
+    
+    #greatings3 {
+        width: 25vw;
+        height: 40vh;
+        background-color: #c1fda0;
+        transform: rotate(12deg);
+        margin-top: 15vh;
+        margin-left: 12vw;
+        position: absolute;
+        z-index: 3;
+        text-align: center;
+        font-size: 0.7rem;
+        padding-top: 5vh;
+    }
+    
+    #greatings4 {
+        width: 25vw;
+        height: 40vh;
+        background-color: #b573dc;
+        transform: rotate(-6deg);
+        margin-top: 15vh;
+        margin-left: 12vw;
+        position: absolute;
+        z-index: 4;
+        text-align: center;
+        font-size: 0.65rem;
+        padding-top: 5vh;
+    }
+    
+    #greatings5 {
+        width: 25vw;
+        height: 37vh;
+        background-color:  #ffffe0;
+        transform: rotate(18deg);
+        margin-top: 15vh;
+        margin-left: 12vw;
+        position: absolute;
+        z-index: 5;
+        font-size: 2rem;
+        text-align: center;
+        font-size: 0.7rem;
+        padding-top: 8vh;
+    }
+    #eggs{
+        width: 23vw;
+        height: 55vh;
+        padding-top: 15vh;
+        padding-left: 2vw;
+        float: left;
+    }
+    #easter{
+        width: 23vw;
+        height: 55vh;
+        padding-top: 15vh;
+        padding-left: 2vw;
+        float: left;
+    }
+    p{
+        font-style: oblique;
+        font-size: 0.9rem;
+    }
+}
+/*koniec landscapa*/
+/*Dla Ipada mini, zwykłego i pro*/
+@media(orientation: landscape) and (min-width:1024px) and (min-height:768px){
+    #title {
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+    #catkin{
+        width: 0;
+        height: 0;
+    }
+    #eggs{
+        width: 100vw;
+        height: 110vh;
+        margin-top: 10vh;
+    }
+    #greatings{
+        width: 100vw;
+    }
+    #greatings1{
+        width: 75vw;
+        height: 50vh;
+        font-size: 0.8rem;
+    }
+    #greatings2{
+        width: 75vw;
+        height: 45vh;
+        font-size: 1rem;
+    }
+    #greatings3{
+        width: 75vw;
+        height: 48vh;
+        padding-top: 7vh;
+        font-size: 1rem;
+    }
+    #greatings4{
+        width: 75vw;
+        height: 50vh;
+        font-size: 1rem;
+    }
+    #greatings5{
+        width: 75vw;
+        height: 45vh;
+        font-size: 1rem;
+    }
+    #easter{
+        width: 100vw;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+/*Media Quaries -koniec*/
