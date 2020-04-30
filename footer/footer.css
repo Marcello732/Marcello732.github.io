@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxanium';
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(35vh, auto);
+    grid-template-areas: 
+    "one one two three";
+    background-color: #04202c;
+    color: #c9d1cb;
+}
+#one{  
+    text-align: left;
+    grid-area: one;
+}
+#two{
+    text-align: left;
+    grid-area: two;
+}
+#three{
+    text-align: left;
+    grid-area: three;
+}
+#one p{
+    text-align: center;
+    font-size: 2.2vh;
+}
+#one a p{
+    font-size: 8vh;
+    font-weight: bold;
+    padding-left: 20%;
+    text-align: left;
+}
+#one p span{
+    color: #31a2ac;
+}
+#two p {
+    padding-left: 10%;
+    font-size: 2.5vh;
+}
+#two p:first-of-type{
+    font-weight: bold;
+    text-decoration: underline #31a2ac;
+    text-underline-position: #31a2ac;
+    padding-left: 10%;
+    font-size: 3.5vh; 
+}
+#three p{
+    font-weight: bold;
+    text-decoration: underline #31a2ac;
+    text-underline-position: #31a2ac;
+    padding-left: 10%;
+    font-size: 3.5vh; 
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: #c9d1cb;
+}
+a:hover{
+    color: #31a2ac;
+}
+.icon-mail:before { content: '\e800'; } 
+.icon-phone:before { content: '\e801'; } 
+.icon-location:before { content: '\e802'; } 
+.icon-twitter:before { content: '\f099'; font-size: 6vh; margin-top: 5vh;}
+.icon-facebook:before { content: '\f09a'; font-size: 6vh; margin-top: 5vh;}
+.icon-youtube-play:before { content: '\f16a'; font-size: 6vh; margin-top: 5vh;}
+.icon-instagram:before { content: '\f16d'; font-size: 6vh; margin-top: 5vh;}
+@media (orientation: portrait){
+    .container{
+        grid-auto-rows: minmax(15vh, auto);
+        grid-template-areas: 
+        "two two two two"
+        "three three three three"
+        "one one one one";
+    }
+    #one a p{
+        font-size: 5vh;
+        text-align: center;
+        padding-left: 0;
+    }
+    #two p:first-of-type{
+        text-align: center;
+        padding-left: 0;
+    }
+    #two p{
+        text-align: center;
+        padding-left: 0;
+    }
+    #three p{
+        text-align: center;
+        padding-left: 0;
+    }
+    .icons{
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon-mail:before { content: '\e800'; } 
+.icon-phone:before { content: '\e801'; } 
+.icon-location:before { content: '\e802'; } 
+.icon-twitter:before { content: '\f099'; font-size: 4.5vh; margin-top: 0;}
+.icon-facebook:before { content: '\f09a'; font-size: 4.5vh; margin-top: 0;}
+.icon-youtube-play:before { content: '\f16a'; font-size: 4.5vh; margin-top: 0;}
+.icon-instagram:before { content: '\f16d'; font-size: 4.5vh; margin-top: 0;}
+}
