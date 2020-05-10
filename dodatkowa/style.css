@@ -1,0 +1,908 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #16697a;
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background: #fff;
+    color: #16697a;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*scroll - start*/
+::-webkit-scrollbar {
+    width: 0.4vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #021c1e;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #004445;
+} 
+::-moz-scrollbar {
+    width: 0.4vw;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #021c1e;
+}
+
+::-moz-scrollbar-track {
+    background-color: #004445;
+} 
+::-ms-scrollbar {
+    width: 0.4vw;
+}
+
+::-ms-scrollbar-thumb {
+    background-color: #021c1e;
+}
+
+::-ms-scrollbar-track {
+    background-color: #004445;
+} 
+/*scroll - koniec*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(20vh, auto);
+    grid-template-areas:
+        "header header header header header nav nav nav"
+        "header header header header header nav nav nav"
+        "header header header header header nav nav nav"
+        "header header header header header nav nav nav"
+        "header header header header header nav nav nav"
+        "mainHeader mainHeader mainHeader mainHeader mainHeader mainHeader mainHeader mainHeader"
+        "main main main main main main main main"
+        "main main main main main main main main"
+        "main main main main main main main main"
+        "main main main main main main main main"
+        "main main main main main main main main"
+        "aside aside aside aside aside aside aside aside"
+        "aside aside aside aside aside aside aside aside"
+        "contentHeader contentHeader contentHeader contentHeader contentHeader contentHeader contentHeader contentHeader"
+        "content content content content content content content content"
+        "articleHeader articleHeader articleHeader articleHeader articleHeader articleHeader articleHeader articleHeader"
+        "article article article article article article article article"
+        "article article article article article article article article"
+        "sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader"
+        "section section section section section section section section"
+        "section section section section section section section section"
+        "section section section section section section section section"
+        "parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo"
+        "parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo"
+        "parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo"
+        "content2Header content2Header content2Header content2Header content2Header content2Header content2Header content2Header"
+        "content2 content2 content2 content2 content2 content2 content2 content2"
+        "galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader"
+        "gallery gallery gallery gallery gallery gallery gallery gallery"
+        "gallery gallery gallery gallery gallery gallery gallery gallery"
+        "gallery gallery gallery gallery gallery gallery gallery gallery"
+        "gallery gallery gallery gallery gallery gallery gallery gallery"
+        "personsHeader personsHeader personsHeader personsHeader personsHeader personsHeader personsHeader personsHeader"
+        "persons persons persons persons persons persons persons persons"
+        "persons persons persons persons persons persons persons persons";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+#navMenuHamburger {
+    display: none;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #16697a;
+    color: #82c0cc;
+    text-align: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(20vh, auto);
+    grid-template-areas:
+        "title title title"
+        "title title title"
+        "title title title"
+        ". arrow ."
+        ". arrow .";
+}
+
+nav #hamburgerMenu {
+    display: none;
+}
+
+nav #navTitle {
+    grid-area: title;
+    font-size: 7vh;
+    font-weight: bold;
+    margin-top: 20vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav #arrow {
+    grid-area: arrow;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav #arrow div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav #arrow div a i {
+    font-size: 7vh;
+    margin-top: 10vh;
+}
+
+nav #arrow div a {
+    animation-name: upanddown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: upanddown;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+nav #arrow div i:hover {
+    cursor: pointer;
+}
+
+main {
+    grid-area: main;
+    background-color: #82c0cc;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+#mainHeader {
+    grid-area: mainHeader;
+    background-color: #82c0cc;
+}
+
+#mainHeader h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+#mainHeader h1::after {
+    content: "";
+    display: block;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+}
+
+section {
+    grid-area: section;
+    background-color: #82c0cc;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#sectionHeader {
+    grid-area: sectionHeader;
+    background-color: #82c0cc;
+}
+
+#sectionHeader h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+#sectionHeader h1::after {
+    content: "";
+    display: block;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/header-image2.jpg);
+}
+
+article {
+    grid-area: article;
+    background-color: #82c0cc;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#articleHeader {
+    grid-area: articleHeader;
+    background-color: #82c0cc;
+}
+
+#articleHeader h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+#articleHeader h1::after {
+    content: "";
+    display: block;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+}
+
+/*persons - start*/
+.persons {
+    grid-area: persons;
+    background-color: #82c0cc;
+}
+
+#personsContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-auto-rows: minmax(10vh, auto);
+    background-color: #16697a;
+    color: #ffffff;
+    grid-template-areas:
+        ". personFirst personSecond ."
+        ". personFirstDescripion personSecondDescripion ."
+        "footer footer footer footer";
+}
+
+#personFirst {
+    grid-area: personFirst;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#personSecond {
+    grid-area: personSecond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#personFirstDescripion {
+    grid-area: personFirstDescripion;
+    padding-top: 5vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+#personSecondDescripion {
+    grid-area: personSecondDescripion;
+    padding-top: 5vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.personsIcon {
+    width: 12.45vw;
+    margin-top: 5vh;
+    height: 12.25vw;
+    border-radius: 50%;
+    background-image: url(img/header-image.jpg);
+    overflow: hidden;
+}
+
+#personsHeader {
+    grid-area: personsHeader;
+    background-color: #16697a;
+    color: #ffffff;
+}
+
+#personsHeader h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+#personsHeader h1::after {
+    content: "";
+    display: block;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #16697a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*persons - koniec*/
+/*gallery - start*/
+.gallery {
+    grid-area: gallery;
+    background-color: #82c0cc;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#galleryHeader {
+    grid-area: galleryHeader;
+    background-color: #82c0cc;
+}
+
+#galleryHeader h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+#galleryHeader h1::after {
+    content: "";
+    display: block;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+}
+
+#galleryImage1 {
+    width: 50vw;
+    height: 20vw;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+    background-color: cadetblue;
+}
+
+#galleryImage2 {
+    width: 30vw;
+    height: 20vw;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+    background-color: cadetblue;
+}
+
+#galleryImage3 {
+    width: 30vw;
+    height: 20vw;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+    background-color: cadetblue;
+}
+
+#galleryImage4 {
+    width: 50vw;
+    height: 20vw;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+    background-color: cadetblue;
+}
+
+/*gallery - koniec*/
+#contentHeader {
+    grid-area: contentHeader;
+    background-color: #82c0cc;
+}
+
+#contentHeader h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+#contentHeader h1::after {
+    content: "";
+    display: block;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+}
+
+#content {
+    grid-area: content;
+    background-color: #82c0cc;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#content2Header {
+    grid-area: content2Header;
+    background-color: #82c0cc;
+}
+
+#content2Header h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+#content2Header h1::after {
+    content: "";
+    display: block;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+}
+
+#content2 {
+    grid-area: content2;
+    background-color: #82c0cc;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#headerNavContainer {
+    background-color: transparent;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+}
+
+#headerNavContainer li {
+    display: inline-block;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#headerNavContainer li a {
+    text-decoration: none;
+    color: #16697a;
+    font-size: 4vh;
+}
+
+#headerNavContainer li a:hover {
+    color: #82c0cc;
+}
+
+.containerNavLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.5vh;
+    background: #16697a;
+    transition: width .3s;
+}
+
+.containerNavLink:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/*videoPrallax - start*/
+.ParallaxVideo {
+    grid-area: parallaxVideo;
+}
+
+.ParallaxVideo video {
+    min-width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/*videoPrallax - koniec*/
+
+
+/*media quaries - start*/
+/*animacje - start*/
+@keyframes upanddown {
+    0% {
+        margin-top: 10vh;
+    }
+
+    25% {
+        margin-top: 12vh;
+    }
+
+    50% {
+        margin-top: 14vh;
+    }
+
+    75% {
+        margin-top: 12vh;
+    }
+
+    100% {
+        margin-top: 10vh;
+    }
+}
+
+@-webkit-keyframes upanddown {
+    0% {
+        margin-top: 10vh;
+    }
+
+    25% {
+        margin-top: 12vh;
+    }
+
+    50% {
+        margin-top: 14vh;
+    }
+
+    75% {
+        margin-top: 12vh;
+    }
+
+    100% {
+        margin-top: 10vh;
+    }
+}
+
+/*animacje - koniec*/
+@media (orientation: portrait) {
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    h1{
+        font-size: 4.5vh;
+    }
+
+    .container {
+        width: 100vw;
+        grid-template-areas:
+            "header header header header header header header header"
+            "header header header header header header header header"
+            "header header header header header header header header"
+            "header header header header header header header header"
+            "header header header header header header header header"
+            "mainHeader mainHeader mainHeader mainHeader mainHeader mainHeader mainHeader mainHeader"
+            "main main main main main main main main"
+            "main main main main main main main main"
+            "main main main main main main main main"
+            "contentHeader contentHeader contentHeader contentHeader contentHeader contentHeader contentHeader contentHeader"
+            "content content content content content content content content"
+            "asideHeader asideHeader asideHeader asideHeader asideHeader asideHeader asideHeader asideHeader"
+            "aside aside aside aside aside aside aside aside"
+            "aside aside aside aside aside aside aside aside"
+            "articleHeader articleHeader articleHeader articleHeader articleHeader articleHeader articleHeader articleHeader"
+            "article article article article article article article article"
+            "article article article article article article article article"
+            "sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader sectionHeader"
+            "section section section section section section section section"
+            "section section section section section section section section"
+            "section section section section section section section section"
+            "parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo"
+            "parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo parallaxVideo"
+            "content2Header content2Header content2Header content2Header content2Header content2Header content2Header content2Header"
+            "content2 content2 content2 content2 content2 content2 content2 content2"
+            "galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader galleryHeader"
+            "gallery gallery gallery gallery gallery gallery gallery gallery"
+            "gallery gallery gallery gallery gallery gallery gallery gallery"
+            "gallery gallery gallery gallery gallery gallery gallery gallery"
+            "gallery gallery gallery gallery gallery gallery gallery gallery"
+            "personsHeader personsHeader personsHeader personsHeader personsHeader personsHeader personsHeader personsHeader"
+            "persons persons persons persons persons persons persons persons"
+            "persons persons persons persons persons persons persons persons";
+    }
+
+    header {
+        grid-area: header;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        min-height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        z-index: -10;
+    }
+
+    header video {
+        object-fit: cover;
+    }
+
+    nav {
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        grid-template-areas:
+            ". . menu"
+            "title title title"
+            "title title title"
+            ". . ."
+            ". arrow .";
+    }
+
+    nav #hamburgerMenu {
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #personsContainer {
+        grid-template-areas:
+            "personFirst personFirst personFirst personFirst"
+            "personFirstDescripion personFirstDescripion personFirstDescripion personFirstDescripion"
+            "personSecond personSecond personSecond personSecond"
+            "personSecondDescripion personSecondDescripion personSecondDescripion personSecondDescripion"
+            "footer footer footer footer";
+    }
+
+    .personsIcon {
+        width: 35vw;
+        margin-top: 5vh;
+        height: 35vw;
+    }
+
+    #personFirstDescripion {
+        padding: 0 15%;
+    }
+
+    #personSecondDescripion {
+        padding: 0 15%;
+    }
+
+    #galleryHeader h1::after {
+        width: 16vw;
+    }
+
+    #personsHeader h1::after {
+        width: 16vw;
+    }
+    #content2Header h1::after{
+        width: 16vw;
+    }
+    #mainHeader h1::after {
+        width: 16vw;
+    }
+
+    #sectionHeader h1::after {
+        width: 16vw;
+    }
+    #contentHeader h1::after{
+        width: 16vw;
+    }
+    #articleHeader h1::after{
+        width: 16vw;
+    }
+    #galleryImage1 {
+        width: 90vw;
+        height: 25vw;
+        margin: 0;
+    }
+
+    #galleryImage2 {
+        width: 90vw;
+        height: 25vw;
+        margin: 0;
+    }
+
+    #galleryImage3 {
+        width: 90vw;
+        height: 25vw;
+        margin: 0;
+    }
+
+    #galleryImage4 {
+        width: 90vw;
+        height: 25vw;
+        margin: 0;
+    }
+
+    .gallery {
+        justify-content: center;
+    }
+
+    #headerNavContainer {
+        display: none;
+    }
+
+    nav #arrow div i {
+        font-size: 7vh;
+        margin-top: -5vh;
+        animation-name: upanddown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: upanddown;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    nav #navTitle {
+        margin-top: 3vh;
+        font-size: 6.5vh;
+    }
+
+    #navMenuHamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: 13;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #16697a;
+        display: none;
+    }
+
+    #navMenuHamburger ul {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5vh 0 0 0;
+        padding: 0;
+    }
+
+    #navMenuHamburger ul li {
+        list-style: none;
+        width: 60%;
+        padding: 5% 0 5% 0;
+        margin: 0 auto;
+        font-size: 3vh;
+    }
+
+    #navMenuHamburger ul li::after {
+        display: block;
+        content: '';
+        width: 70%;
+        height: 0.5vh;
+        margin: 1vh auto;
+        background-color: #ffffff;
+    }
+   
+
+    #hamburger {
+        width: 11vw;
+        height: 11vw;
+        background-color: transparent;
+        border: 0;
+        border-top: 1vw solid white;
+        position: relative;
+        cursor: pointer;
+        z-index: 20;
+    }
+    
+    #hamburger::before,
+    #hamburger::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1vw solid white;
+        transform: translateY(2.5vw);
+    }
+    
+    #hamburger::after {
+        transform: translateY(6vw);
+    }
+    #hamburgerArrow{
+        width: 11vw;
+        height: 11vw;
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        cursor: pointer;
+        z-index: 19;
+        opacity: 0;
+    }
+    #hamburgerArrow::before, #hamburgerArrow::after{
+        content: '';
+        position: absolute;
+        height: 1vw;
+        width: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+    }
+    #hamburgerArrow::before{
+
+        transform: translateY(4.5vw) rotate(45deg);
+    }
+    #hamburgerArrow::after{
+        transform: translateY(4.5vw) rotate(-45deg);
+    }
+    /*animacje - start*/
+    @keyframes upanddown {
+        0% {
+            margin-top: -5vh;
+        }
+
+        25% {
+            margin-top: -3vh;
+        }
+
+        50% {
+            margin-top: -1vh;
+        }
+
+        75% {
+            margin-top: -3vh;
+        }
+
+        100% {
+            margin-top: -5vh;
+        }
+    }
+
+    @-webkit-keyframes upanddown {
+        0% {
+            margin-top: -5vh;
+        }
+
+        25% {
+            margin-top: -3vh;
+        }
+
+        50% {
+            margin-top: -1vh;
+        }
+
+        75% {
+            margin-top: -3vh;
+        }
+
+        100% {
+            margin-top: -5vh;
+        }
+    }
+
+    /*animacje - koniec*/
+}
+
+/*media quaries - koniec*/
